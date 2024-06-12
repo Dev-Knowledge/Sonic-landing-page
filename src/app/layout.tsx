@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Archivo_Black } from "next/font/google";
 import "./globals.css";
+import { AOSInit } from "./aos";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Archivo_Black({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <AOSInit />
+      <body className={` max-w-5xl mx-auto`}>{children}</body>
     </html>
   );
 }
