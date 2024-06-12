@@ -21,7 +21,7 @@ function Card({ name, className }: { name: string; className?: string }) {
           SONIC LAUNCH PARTY
         </h2>
         <p className="lg:text-xs text-[10px] text-justify">
-          The meme coin that's faster than the speed of light inspired by the
+          The meme coin that is faster than the speed of light inspired by the
           classic video game character.
         </p>
       </div>
